@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&GEN SENTINEL &amp; GENOMIC MAPPER — Advanced Biological Intelligence</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            DEFAULT: '#0B2219',
+                            dark: '#05120D',
+                            light: '#16382B',
+                            muted: '#1D4536',
+                            accent: '#265744'
+                        },
+                        paper: '#FAFAFA'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom overrides & animations - Strict constraint: NO ITALICS */
+        * {
+            font-style: normal !important;
+        }
+
+        body {
+            background-color: #FAFAFA;
+            color: #0B2219;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            letter-spacing: -0.01em;
+            overflow-x: hidden;
+        }
+
+        /* Scroll Reveal Animation Styles */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1.1s cubic-bezier(0.16, 1, 0.3, 1), transform 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, transform;
+        }
+
+        .reveal-element.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Delay utilities */
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+
+        /* Minimal clean divider lines */
+        .border-forest-subtle {
+            border-color: rgba(11, 34, 25, 0.12);
+        }
+
+        .border-white-subtle {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .screenshot-shadow {
+            box-shadow: 0 20px 40px -15px rgba(11, 34, 25, 0.15);
+        }
+    </style>
+</head>
+<body class="selection:bg-forest selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 w-full z-50 mix-blend-difference py-6 px-8 md:px-16 flex justify-between items-center text-white">
+        <a href="#" class="text-xl tracking-widest font-extralight uppercase">&amp;GEN</a>
+        <div class="space-x-8 text-sm font-extralight tracking-widest hidden md:flex uppercase">
+            <a href="#overview" class="hover:opacity-60 transition-opacity">Overview</a>
+            <a href="#workflow" class="hover:opacity-60 transition-opacity">Workflow</a>
+            <a href="#sentinel" class="hover:opacity-60 transition-opacity">Sentinel</a>
+            <a href="#mapper" class="hover:opacity-60 transition-opacity">Genomic Mapper</a>
+            <a href="#capabilities" class="hover:opacity-60 transition-opacity">Capabilities</a>
+            <a href="#philosophy" class="hover:opacity-60 transition-opacity">Philosophy</a>
+        </div>
+        <a href="#sandbox" class="text-xs uppercase tracking-widest border border-white/40 px-5 py-2.5 hover:bg-white hover:text-black transition-all">Interactive Lab</a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 text-center relative pt-20">
+        <div class="max-w-5xl mx-auto space-y-8">
+            <div class="reveal-element">
+                <span class="text-xs tracking-[0.3em] uppercase text-forest/60 font-light block mb-4">Advanced Biological Intelligence &amp; Field Analysis</span>
+            </div>
+            
+            <h1 class="reveal-element delay-100 text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extralight tracking-tighter text-forest leading-[0.95]">
+                &amp;GEN SENTINEL
+            </h1>
+            
+            <p class="reveal-element delay-200 max-w-xl mx-auto text-base sm:text-lg md:text-xl font-light text-forest/70 leading-relaxed pt-4">
+                An AI-powered tricorder for biology. Transforming standard smartphones and microscopes into all-in-one field laboratories.
+            </p>
+
+            <div class="reveal-element delay-300 pt-10">
+                <a href="#overview" class="inline-block text-xs uppercase tracking-[0.25em] text-forest border-b border-forest/40 pb-2 hover:border-forest transition-all">
+                    Scroll To Explore
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 w-px h-16 bg-forest/20"></div>
+    </section>
+
+    <!-- 1. OVERVIEW SECTION -->
+    <section id="overview" class="py-32 px-8 md:px-20 border-t border-forest-subtle">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+            <div class="md:col-span-4 reveal-element">
+                <span class="text-xs tracking-[0.3em] uppercase text-forest/50 font-light block">01 / Concept</span>
+                <h2 class="text-3xl sm:text-4xl font-extralight text-forest mt-4 tracking-tight">The Tricorder For Biology</h2>
+            </div>
+            <div class="md:col-span-8 space-y-8 reveal-element delay-100 text-lg md:text-xl font-light leading-relaxed text-forest/80">
+                <p>
+                    &amp;GEN is a conceptual mobile application designed to act as an all-in-one field laboratory. By pointing a smartphone camera—often through a microscope for cellular work—the app uses advanced Artificial Intelligence and Augmented Reality to instantly identify any biological entity.
+                </p>
+                <p>
+                    From a giant venomous centipede to a microscopic plant root cross-section, &amp;GEN delivers a comprehensive scientific breakdown anywhere on Earth, bridging macro-vision and cellular genomics.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. WORKFLOW SECTION -->
+    <section id="workflow" class="py-32 px-8 md:px-20 bg-forest text-paper">
+        <div class="max-w-6xl mx-auto space-y-24">
+            <div class="reveal-element">
+                <span class="text-xs tracking-[0.3em] uppercase text-paper/50 font-light block">02 / Workflow</span>
+                <h2 class="text-3xl sm:text-5xl font-extralight tracking-tight mt-4">Five-Step Field Workflow</h2>
+            </div>
+
+            <div class="space-y-20">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pt-8 border-t border-white-subtle reveal-element">
+                    <div class="md:col-span-2 text-2xl font-extralight text-paper/40">01</div>
+                    <div class="md:col-span-4 text-xl font-light tracking-wide">Detection &amp; Scanning</div>
+                    <div class="md:col-span-6 text-paper/70 font-light leading-relaxed">
+                        The user points their camera at a specimen. Image segmentation outlines the object, and AR overlays label specific anatomical parts with an instant confidence score.
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pt-8 border-t border-white-subtle reveal-element">
+                    <div class="md:col-span-2 text-2xl font-extralight text-paper/40">02</div>
+                    <div class="md:col-span-4 text-xl font-light tracking-wide">Sentinel Safety</div>
+                    <div class="md:col-span-6 text-paper/70 font-light leading-relaxed">
+                        Before the user gets too close, the Sentinel tab assesses biochemical hazards, flagging pathogens, venoms, or toxins and outputting explicit safety protocols.
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pt-8 border-t border-white-subtle reveal-element">
+                    <div class="md:col-span-2 text-2xl font-extralight text-paper/40">03</div>
+                    <div class="md:col-span-4 text-xl font-light tracking-wide">Biological Deep Analysis</div>
+                    <div class="md:col-span-6 text-paper/70 font-light leading-relaxed">
+                        Exhaustive scientific database parsing taxonomy, physical morphology, microscopic histology, morphometrics, molecular DNA/RNA profiles, and metabolic pathway predictions.
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pt-8 border-t border-white-subtle reveal-element">
+                    <div class="md:col-span-2 text-2xl font-extralight text-paper/40">04</div>
+                    <div class="md:col-span-4 text-xl font-light tracking-wide">Comparative Analysis</div>
+                    <div class="md:col-span-6 text-paper/70 font-light leading-relaxed">
+                        Cross-references active scans against other organisms or cell types to determine evolutionary relationships and similarity scores.
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pt-8 border-t border-white-subtle reveal-element">
+                    <div class="md:col-span-2 text-2xl font-extralight text-paper/40">05</div>
+                    <div class="md:col-span-4 text-xl font-light tracking-wide">Database Knowledge Layer</div>
+                    <div class="md:col-span-6 text-paper/70 font-light leading-relaxed">
+                        Provides ecological context, life cycle predictions, host interactions, disease associations, and verified scientific references.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SENTINEL CAPABILITIES SECTION -->
+    <section id="sentinel" class="py-32 px-8 md:px-20 border-b border-forest-subtle">
+        <div class="max-w-6xl mx-auto space-y-20">
+            <div class="reveal-element">
+                <span class="text-xs tracking-[0.3em] uppercase text-forest/50 font-light block">03 / Spectrum</span>
+                <h2 class="text-3xl sm:text-5xl font-extralight text-forest tracking-tight mt-4">Sentinel Identification Range</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pt-8">
+                <div class="reveal-element space-y-3">
+                    <div class="text-xs uppercase tracking-widest text-forest/40">Scale 01</div>
+                    <h3 class="text-xl font-light text-forest">Macro-Organisms</h3>
+                    <p class="text-sm text-forest/70 font-light leading-relaxed">Comprehensive classification for animals, plants, fungi, and parasites.</p>
+                </div>
+
+                <div class="reveal-element delay-100 space-y-3">
+                    <div class="text-xs uppercase tracking-widest text-forest/40">Scale 02</div>
+                    <h3 class="text-xl font-light text-forest">Micro-Organisms</h3>
+                    <p class="text-sm text-forest/70 font-light leading-relaxed">Instant real-time identification of microscopic bacteria and protozoa.</p>
+                </div>
+
+                <div class="reveal-element delay-200 space-y-3">
+                    <div class="text-xs uppercase tracking-widest text-forest/40">Scale 03</div>
+                    <h3 class="text-xl font-light text-forest">Micro-Structures</h3>
+                    <p class="text-sm text-forest/70 font-light leading-relaxed">Detailed histological tissue cross-sections, cell walls, and subcellular organelles.</p>
+                </div>
+
+                <div class="reveal-element delay-300 space-y-3">
+                    <div class="text-xs uppercase tracking-widest text-forest/40">Scale 04</div>
+                    <h3 class="text-xl font-light text-forest">Unknown Objects</h3>
+                    <p class="text-sm text-forest/70 font-light leading-relaxed">Advanced heuristic detection of unknown biological objects classified from available data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECOND HERO SECTION: &GEN GENOMIC MAPPER -->
+    <section id="mapper" class="min-h-screen flex flex-col justify-center px-8 md:px-20 py-32 border-b border-forest-subtle bg-paper">
+        <div class="max-w-5xl mx-auto space-y-16 text-center">
+            <div class="reveal-element">
+                <span class="text-xs tracking-[0.3em] uppercase text-forest/50 font-light block mb-4">04 / Clinical Bioinformatics &amp; Oncology</span>
+            </div>
+            
+            <h2 class="reveal-element delay-100 text-4xl sm:text-6xl md:text-7xl font-extralight tracking-tighter text-forest leading-[1.05]">
+                &amp;GEN GENOMIC MAPPER
+            </h2>
+            
+            <p class="reveal-element delay-200 text-lg sm:text-xl md:text-2xl font-light text-forest/70 tracking-wide">
+                Variant Impact Explorer
+            </p>
+
+            <div class="reveal-element delay-300 max-w-2xl mx-auto pt-6 text-base md:text-lg font-light text-forest/80 leading-relaxed space-y-6">
+                <p>
+                    A specialized, professional-grade software module within the broader &amp;GEN ecosystem. While SENTINEL handles field biology, Genomic Mapper is an advanced clinical engine that takes a specific genetic mutation and instantly calculates exactly how that tiny change in DNA breaks human biology.
+                </p>
+                <p>
+                    When geneticists sequence a tumor or DNA, they uncover hundreds of mutations. Genomic Mapper automates the investigation, transforming raw genetic data into a complete, multi-layered clinical report in seconds.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GENOMIC MAPPER PIPELINE DETAILS WITH INTERFACE SCREENSHOTS -->
+    <section class="py-32 px-8 md:px-20 border-b border-forest-subtle bg-paper">
+        <div class="max-w-6xl mx-auto space-y-32">
+            <div class="reveal-element">
+                <span class="text-xs tracking-[0.3em] uppercase text-forest/50 font-light block">Clinical Pipeline</span>
+                <h3 class="text-3xl sm:text-5xl font-extralight text-forest tracking-tight mt-4">The Four-Step Analysis Pipeline</h3>
+            </div>
+
+            <div class="space-y-32">
+                <!-- Input Option Overview / Intro -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-8 border-t border-forest-subtle reveal-element">
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-xs tracking-widest uppercase text-forest/50 font-light">Input Interface</span>
+                        <h4 class="text-2xl font-extralight text-forest">Automated &amp; Manual Variant Notation</h4>
+                        <p class="text-forest/80 font-light leading-relaxed">
+                            Seamless input options allowing researchers to select pre-configured benchmark variants (e.g. BRAF c.1799T&gt;A, BRCA2 c.9976A&gt;T) or manually enter specific RefSeq transcript annotations and genomic substitutions.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-6 flex justify-center">
+                        <img src="1.png" alt="Genomic Mapper Manual Input Interface" class="w-full max-w-sm rounded-2xl border border-forest-subtle screenshot-shadow">
+                    </div>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-12 border-t border-forest-subtle reveal-element">
+                    <div class="lg:col-span-6 space-y-6 order-2 lg:order-1 flex justify-center">
+                        <img src="5.png" alt="Variant Identification &amp; Classification UI" class="w-full max-w-sm rounded-2xl border border-forest-subtle screenshot-shadow">
+                    </div>
+                    <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
+                        <div class="text-2xl font-extralight text-forest/40">01</div>
+                        <h4 class="text-2xl font-extralight text-forest">Variant Identification &amp; Classification (The Verdict)</h4>
+                        <div class="space-y-4 text-forest/80 font-light leading-relaxed text-sm md:text-base">
+                            <p>
+                                <strong class="font-normal text-forest">Input:</strong> The user enters a gene (e.g., TP53), a transcript ID, and the DNA change (e.g., c.818G&gt;A).
+                            </p>
+                            <p>
+                                <strong class="font-normal text-forest">Output:</strong> Translates DNA into protein change (p.Arg273His) and delivers a definitive verdict: PATHOGENIC or Benign.
+                            </p>
+                            <p>
+                                <strong class="font-normal text-forest">Evidence:</strong> Powered by AlphaMissense (0.984), CADD Phred (34.0), REVEL Score (0.942), ClinVar, and gnomAD at chromosomal location chr17:7674220.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-12 border-t border-forest-subtle reveal-element">
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="text-2xl font-extralight text-forest/40">02</div>
+                        <h4 class="text-2xl font-extralight text-forest">Regulation (Transcription Factor Binding)</h4>
+                        <div class="space-y-4 text-forest/80 font-light leading-relaxed text-sm md:text-base">
+                            <p>
+                                <strong class="font-normal text-forest">The Biology:</strong> Many proteins act as switches turning other genes on or off by binding to DNA.
+                            </p>
+                            <p>
+                                <strong class="font-normal text-forest">The Analysis:</strong> Predicts whether mutations break this switch, revealing catastrophic loss of sequence-specific binding affinity across cell cycle promoters.
+                            </p>
+                            <p>
+                                <strong class="font-normal text-forest">The Data:</strong> Integrates JASPAR and ENCODE data, displaying sequence motif changes (WT: GGGCAAGTCC vs. MUT: GGACAAGTCC) and calculating a drop in affinity of -12.7 bits.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 flex justify-center">
+                        <img src="3.png" alt="Transcription Factor Binding UI" class="w-full max-w-sm rounded-2xl border border-forest-subtle screenshot-shadow">
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-12 border-t border-forest-subtle reveal-element">
+                    <div class="lg:col-span-6 space-y-6 order-2 lg:order-1 flex justify-center">
+                        <img src="4.png" alt="Splicing Delta Profile UI" class="w-full max-w-sm rounded-2xl border border-forest-subtle screenshot-shadow">
+                    </div>
+                    <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
+                        <div class="text-2xl font-extralight text-forest/40">03</div>
+                        <h4 class="text-2xl font-extralight text-forest">Splicing (RNA Processing)</h4>
+                        <div class="space-y-4 text-forest/80 font-light leading-relaxed text-sm md:text-base">
+                            <p>
+                                <strong class="font-normal text-forest">The Biology:</strong> Pre-mRNA splicing cuts out non-coding introns and stitches exons together.
+                            </p>
+                            <p>
+                                <strong class="font-normal text-forest">The Analysis:</strong> Evaluates splice error probabilities (donor gain/loss, acceptor gain/loss) across genomic exon-intron junction architectures.
+                            </p>
+                            <p>
+                                <strong class="font-normal text-forest">The Verdict:</strong> Confirms minimal splice-junction alteration, ensuring internal coding exons remain preserved while isolating impact to protein structure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center pt-12 border-t border-forest-subtle reveal-element">
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="text-2xl font-extralight text-forest/40">04</div>
+                        <h4 class="text-2xl font-extralight text-forest">3D Protein Structure (The Physical Reality)</h4>
+                        <div class="space-y-4 text-forest/80 font-light leading-relaxed text-sm md:text-base">
+                            <p>
+                                <strong class="font-normal text-forest">The Biology:</strong> Single amino acid swaps alter folding stability and 3D molecular geometry.
+                            </p>
+                            <p>
+                                <strong class="font-normal text-forest">The Analysis:</strong> Renders interactive structural models from the Protein Data Bank (PDB: 1TUP), highlighting exact mutation loci (Residue Arg273His).
+                            </p>
+                            <p>
+                                <strong class="font-normal text-forest">Biophysical Metrics:</strong> Fold Stability ΔΔG (-2.85 kcal/mol), Steric Clash Index (38%), H-Bonds Lost (-3 polar network bonds severed), and Solvent Exposure (18.2%).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6 flex justify-center">
+                        <img src="2.png" alt="3D Protein Structure Metrics UI" class="w-full max-w-sm rounded-2xl border border-forest-subtle screenshot-shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. INTERACTIVE SANDBOX -->
+    <section id="sandbox" class="py-32 px-8 md:px-20 bg-forest-dark text-paper">
+        <div class="max-w-6xl mx-auto space-y-16">
+            <div class="reveal-element">
+                <span class="text-xs tracking-[0.3em] uppercase text-paper/50 font-light block">05 / Live Simulation</span>
+                <h2 class="text-3xl sm:text-5xl font-extralight tracking-tight mt-4">Field &amp; Clinical Sandbox</h2>
+            </div>
+
+            <div class="reveal-element delay-100 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pt-8 border-t border-white-subtle">
+                <!-- Selector control -->
+                <div class="lg:col-span-4 space-y-4">
+                    <p class="text-xs uppercase tracking-widest text-paper/50 mb-6">Select Target Specimen or Module</p>
+                    
+                    <button onclick="setSpecimen('centipede')" id="btn-centipede" class="w-full text-left py-4 px-6 border border-white/20 text-sm tracking-wide font-light hover:bg-white/10 transition-all">
+                        Scolopendra gigantea (Centipede)
+                    </button>
+                    
+                    <button onclick="setSpecimen('mutation')" id="btn-mutation" class="w-full text-left py-4 px-6 border border-white/10 text-sm tracking-wide font-light text-paper/60 hover:bg-white/10 transition-all">
+                        TP53 Variant (c.818G&gt;A / p.Arg273His)
+                    </button>
+
+                    <button onclick="setSpecimen('plant')" id="btn-plant" class="w-full text-left py-4 px-6 border border-white/10 text-sm tracking-wide font-light text-paper/60 hover:bg-white/10 transition-all">
+                        Zea mays Stem Cross-Section
+                    </button>
+                    
+                    <button onclick="setSpecimen('bacteria')" id="btn-bacteria" class="w-full text-left py-4 px-6 border border-white/10 text-sm tracking-wide font-light text-paper/60 hover:bg-white/10 transition-all">
+                        Pseudomonas aeruginosa
+                    </button>
+                </div>
+
+                <!-- Dynamic display panel -->
+                <div class="lg:col-span-8 p-8 border border-white/15 space-y-8 bg-forest/40">
+                    <div class="flex justify-between items-center border-b border-white-subtle pb-4">
+                        <div>
+                            <span class="text-xs tracking-widest text-paper/50 uppercase block">Active Target / Module</span>
+                            <h3 id="specimen-title" class="text-2xl font-extralight mt-1">Scolopendra gigantea</h3>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs tracking-widest text-paper/50 uppercase block">Confidence / Verdict</span>
+                            <span id="specimen-confidence" class="text-xl font-extralight text-emerald-400">98.4%</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm font-light">
+                        <div class="space-y-2">
+                            <span class="text-xs uppercase tracking-widest text-paper/40 block" id="label-hazard">Sentinel Hazard Alert</span>
+                            <p id="specimen-hazard" class="text-paper/80 leading-relaxed">High Toxicity: Neurotoxic Venom. Do not handle without protective equipment.</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <span class="text-xs uppercase tracking-widest text-paper/40 block" id="label-segment">Anatomical Segmentation</span>
+                            <p id="specimen-segment" class="text-paper/80 leading-relaxed">Forcipules (poison claws), 21 body segments, lateral spiracles identified.</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <span class="text-xs uppercase tracking-widest text-paper/40 block" id="label-genomics">Genomic &amp; Molecular Markers</span>
+                            <p id="specimen-genomics" class="text-paper/80 leading-relaxed">Phospholipase A2 &amp; hyaluronidase enzyme expression predicted.</p>
+                        </div>
+
+                        <div class="space-y-2">
+                            <span class="text-xs uppercase tracking-widest text-paper/40 block" id="label-evolution">Lineage / Evolutionary Origin</span>
+                            <p id="specimen-evolution" class="text-paper/80 leading-relaxed">Myriapoda lineage traceable to upper Silurian period (~420 Mya).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. PHILOSOPHY -->
+    <section id="philosophy" class="py-32 px-8 md:px-20 bg-paper">
+        <div class="max-w-6xl mx-auto space-y-24">
+            <div class="reveal-element">
+                <span class="text-xs tracking-[0.3em] uppercase text-forest/50 font-light block">06 / Philosophy</span>
+                <h2 class="text-3xl sm:text-5xl font-extralight text-forest tracking-tight mt-4">Core Principles</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="reveal-element space-y-6">
+                    <span class="text-xs uppercase tracking-widest text-forest/40">Pillar A</span>
+                    <h3 class="text-2xl font-extralight text-forest">Total Context</h3>
+                    <p class="text-forest/70 font-light text-base leading-relaxed">
+                        Moving beyond simple nomenclature. &amp;GEN yields complete structural, historical, evolutionary, and molecular understanding for every biological entity.
+                    </p>
+                </div>
+
+                <div class="reveal-element delay-100 space-y-6">
+                    <span class="text-xs uppercase tracking-widest text-forest/40">Pillar B</span>
+                    <h3 class="text-2xl font-extralight text-forest">Safety First</h3>
+                    <p class="text-forest/70 font-light text-base leading-relaxed">
+                        Integrating safety checks and variant impact analysis directly into the primary scan path to shield researchers before close proximity interaction occurs.
+                    </p>
+                </div>
+
+                <div class="reveal-element delay-200 space-y-6">
+                    <span class="text-xs uppercase tracking-widest text-forest/40">Pillar C</span>
+                    <h3 class="text-2xl font-extralight text-forest">Democratizing Science</h3>
+                    <p class="text-forest/70 font-light text-base leading-relaxed">
+                        Condensing micro-histology, molecular biology, clinical genomics, and taxonomic classification into a portable smartphone platform accessible anywhere on Earth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. PRACTICAL DEMO REQUEST SECTION -->
+    <section id="demo" class="py-32 px-8 md:px-20 border-t border-forest-subtle bg-paper">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            <div class="reveal-element space-y-4">
+                <span class="text-xs tracking-[0.3em] uppercase text-forest/50 font-light block">07 / Evaluation &amp; Collaboration</span>
+                <h2 class="text-3xl sm:text-5xl font-extralight text-forest tracking-tight">Practical Demonstration</h2>
+            </div>
+
+            <!-- Prominent Centered Button -->
+            <div class="reveal-element delay-100 flex justify-center">
+                <button id="demo-toggle-btn" onclick="toggleDemoSection()" class="text-xs uppercase tracking-[0.25em] text-forest border border-forest px-8 py-4 hover:bg-forest hover:text-paper transition-all duration-300 focus:outline-none">
+                    Request a Practical Demo
+                </button>
+            </div>
+
+            <!-- Expanding Content Panel -->
+            <div id="demo-expand-panel" class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out opacity-0 border-t border-forest-subtle/0 text-left">
+                <div class="pt-12 space-y-8 text-forest/80 font-light leading-relaxed">
+                    <h3 class="text-2xl sm:text-3xl font-extralight text-forest tracking-tight text-center">
+                        Experience the Future of Biological Intelligence
+                    </h3>
+
+                    <p class="text-base sm:text-lg">
+                        The &amp;GEN suite is designed to bridge the gap between computational theory and physical laboratory application. From identifying unknown macro-organisms in the field to simulating complex molecular docking for drug discovery, &amp;GEN is built to be your portable research assistant.
+                    </p>
+
+                    <p class="text-base sm:text-lg">
+                        I am currently offering exclusive, hands-on practical demonstrations of the &amp;GEN platform for researchers, academics, and industry professionals. See how my computational-driven modules can accelerate your workflow in real-time.
+                    </p>
+
+                    <div class="p-8 border border-forest-subtle bg-forest/5 space-y-4">
+                        <p class="text-sm uppercase tracking-widest text-forest/60">Direct Contact Details</p>
+                        <p class="text-base font-normal text-forest">
+                            To request a physical demonstration, discuss collaboration, or explore the application practically, please reach out directly:
+                        </p>
+                        <a href="mailto:shadman.shakib1@g.bracu.ac.bd" class="inline-block text-base sm:text-lg text-forest font-normal underline hover:opacity-75 transition-opacity">
+                            shadman.shakib1@g.bracu.ac.bd
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-20 px-8 md:px-20 border-t border-forest-subtle bg-paper text-forest">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+            <div class="space-y-2">
+                <span class="text-2xl font-extralight tracking-widest uppercase">&amp;GEN SENTINEL &amp; MAPPER</span>
+                <p class="text-xs text-forest/50 font-light">Next-Generation Biological Intelligence &amp; Clinical Genomics</p>
+            </div>
+            
+            <div class="space-y-1 text-xs font-light tracking-wider text-forest/80 uppercase md:text-right">
+                <p class="font-normal text-forest">built and developed by SHADMAN SHAKIB</p>
+                <p><a href="mailto:shadman.shakib1@g.bracu.ac.bd" class="hover:underline">shadman.shakib1@g.bracu.ac.bd</a></p>
+                <p><a href="mailto:shadman.shakiblxl@gmail.com" class="hover:underline">shadman.shakiblxl@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data structure for interactive simulation including genomic mapper
+        const specimenData = {
+            centipede: {
+                title: "Scolopendra gigantea",
+                confidence: "98.4%",
+                labelHazard: "Sentinel Hazard Alert",
+                hazard: "High Toxicity: Neurotoxic Venom. Handle strictly with long forceps.",
+                labelSegment: "Anatomical Segmentation",
+                segment: "Forcipules (poison claws), 21 body segments, lateral spiracles identified.",
+                labelGenomics: "Genomic & Molecular Markers",
+                genomics: "Phospholipase A2 & hyaluronidase toxin gene annotations detected.",
+                labelEvolution: "Lineage / Evolutionary Origin",
+                evolution: "Myriapoda lineage traceable to upper Silurian period (~420 Mya)."
+            },
+            mutation: {
+                title: "TP53 Mutation (c.818G>A / p.Arg273His)",
+                confidence: "PATHOGENIC",
+                labelHazard: "Clinical Verdict & Evidence",
+                hazard: "Pathogenic Driver Mutation. Confirmed across ClinVar, gnomAD, and AlphaMissense.",
+                labelSegment: "Transcription Regulation",
+                segment: "Catastrophic loss of sequence-specific DNA binding affinity (-12.7 bits drop).",
+                labelGenomics: "RNA Processing / Splicing",
+                genomics: "Normal splicing probability (Delta score < 0.02). Disrupts protein folding exclusively.",
+                labelEvolution: "3D Protein Stability (PDB: 1TUP)",
+                evolution: "ΔΔG: -2.85 kcal/mol (Severe destabilization). 3 H-bonds lost at codon 273."
+            },
+            plant: {
+                title: "Zea mays Stem (Histological)",
+                confidence: "99.1%",
+                labelHazard: "Sentinel Hazard Alert",
+                hazard: "Non-hazardous biological specimen. Safe for direct contact.",
+                labelSegment: "Anatomical Segmentation",
+                segment: "Scattered vascular bundles, outer epidermis, xylar parenchyma cells.",
+                labelGenomics: "Genomic & Molecular Markers",
+                genomics: "C4 photosynthetic pathway gene regulators active in bundle sheath.",
+                labelEvolution: "Lineage / Evolutionary Origin",
+                evolution: "Angiosperm monocot lineage originating in early Cretaceous era."
+            },
+            bacteria: {
+                title: "Pseudomonas aeruginosa",
+                confidence: "96.7%",
+                labelHazard: "Sentinel Hazard Alert",
+                hazard: "Bio-Hazard Risk: Opportunistic pathogen. Use sterile protocols.",
+                labelSegment: "Anatomical Segmentation",
+                segment: "Gram-negative bacillus morphotype, polar flagella detected.",
+                labelGenomics: "Genomic & Molecular Markers",
+                genomics: "Exotoxin A synthesis encoding sequence match identified.",
+                labelEvolution: "Lineage / Evolutionary Origin",
+                evolution: "Gammaproteobacteria class characterized by high adaptability."
+            }
+        };
+
+        // Interactive switch function
+        function setSpecimen(key) {
+            const data = specimenData[key];
+            if (!data) return;
+
+            document.getElementById('specimen-title').innerText = data.title;
+            document.getElementById('specimen-confidence').innerText = data.confidence;
+            
+            document.getElementById('label-hazard').innerText = data.labelHazard;
+            document.getElementById('specimen-hazard').innerText = data.hazard;
+
+            document.getElementById('label-segment').innerText = data.labelSegment;
+            document.getElementById('specimen-segment').innerText = data.segment;
+
+            document.getElementById('label-genomics').innerText = data.labelGenomics;
+            document.getElementById('specimen-genomics').innerText = data.genomics;
+
+            document.getElementById('label-evolution').innerText = data.labelEvolution;
+            document.getElementById('specimen-evolution').innerText = data.evolution;
+
+            // Highlight selected button border
+            ['centipede', 'mutation', 'plant', 'bacteria'].forEach(item => {
+                const btn = document.getElementById('btn-' + item);
+                if (item === key) {
+                    btn.className = "w-full text-left py-4 px-6 border border-white/40 text-sm tracking-wide font-light text-paper hover:bg-white/10 transition-all";
+                } else {
+                    btn.className = "w-full text-left py-4 px-6 border border-white/10 text-sm tracking-wide font-light text-paper/60 hover:bg-white/10 transition-all";
+                }
+            });
+        }
+
+        // Toggle practical demo expandable section
+        let isDemoOpen = false;
+        function toggleDemoSection() {
+            const panel = document.getElementById('demo-expand-panel');
+            const btn = document.getElementById('demo-toggle-btn');
+            
+            isDemoOpen = !isDemoOpen;
+
+            if (isDemoOpen) {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.classList.remove('opacity-0');
+                panel.classList.add('opacity-100', 'border-forest-subtle');
+                btn.innerText = "Close Demo Information";
+                btn.classList.add('bg-forest', 'text-paper');
+            } else {
+                panel.style.maxHeight = "0px";
+                panel.classList.remove('opacity-100', 'border-forest-subtle');
+                panel.classList.add('opacity-0');
+                btn.innerText = "Request a Practical Demo";
+                btn.classList.remove('bg-forest', 'text-paper');
+            }
+        }
+
+        // Intersection Observer for scroll-triggered reveal animations
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observerInstance) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observerInstance.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll(".reveal-element");
+            revealElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
